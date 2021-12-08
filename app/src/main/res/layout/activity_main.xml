@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/texttitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="40dp"
+        android:gravity="center"
+        android:text="INSERT YOUR INFORMATION"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Full Name"
+        android:textSize="24dp"
+        android:layout_below="@+id/texttitle"
+        android:inputType="textPersonName"/>
+
+    <EditText
+        android:id="@+id/contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:hint="Your Contact"
+        android:inputType="number"
+        android:textSize="24dp" />
+
+    <EditText
+        android:id="@+id/dob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/contact"
+        android:hint="Date of Birth"
+        android:inputType="textPersonName"
+        android:textSize="24dp" />
+
+
+    <Button
+        android:id="@+id/btnInsert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dob"
+        android:layout_marginTop="30dp"
+        android:text="Insert New Info"
+        android:backgroundTint="@color/black"
+        android:textSize="24dp" />
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="Update Info"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/black"
+        android:layout_below="@+id/btnInsert"/>
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnUpdate"
+        android:layout_marginTop="30dp"
+        android:text="Delete Existing Info"
+        android:backgroundTint="@color/black"
+        android:textSize="24dp" />
+
+    <Button
+        android:id="@+id/btnView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnDelete"
+        android:layout_marginTop="30dp"
+        android:text="View Info"
+        android:backgroundTint="@color/cardview_dark_background"
+        android:textSize="24dp" />
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
